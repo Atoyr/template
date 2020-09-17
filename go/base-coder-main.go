@@ -2,15 +2,13 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strconv"
 )
 
 func main() {
 	nextReader = newScanner()
-
-  {{_cursor_}}
+	{{_cursor_}}
 }
 
 var nextReader func() string

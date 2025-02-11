@@ -1,0 +1,1 @@
+    public DbSet<{{_input:model_name}}> {{_input:name}} { get; set; }

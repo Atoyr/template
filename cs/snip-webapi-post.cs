@@ -6,7 +6,7 @@
     [Route("[controller]/[action]")]
     [ProducesResponseType<object>(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public IActionResult CreateProduct(object obj)
+    public IActionResult {{_input_:action_name}}(object obj)
     {
         return Ok(obj);
     }

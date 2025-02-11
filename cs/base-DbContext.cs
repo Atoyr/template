@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace {{your_namespace}};
+namespace {{_input_:your_namespace}};
 
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options) { }
+    {{_cursor_}}
 }

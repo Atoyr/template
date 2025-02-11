@@ -1,1 +1,1 @@
-    public DbSet<{{_input:model_name}}> {{_input:name}} { get; set; }
+    public DbSet<{{_input_:model_name}}> {{_input_:name}} { get; set; }

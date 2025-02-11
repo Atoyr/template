@@ -1,3 +1,3 @@
 using System.Text.RegularExpressions;
 
-Regex.IsMatch({{_input:source}}, {{_input:pattern}})
+Regex.IsMatch({{_input_:source}}, {{_input_:pattern}})

@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace {{_input:namespace}};
+namespace {{_input_:namespace}};
 
-public class {{_input:controller_name}}Controller : ControllerBase
+public class {{_input_:controller_name}}Controller : ControllerBase
 {
     /// <summary>
     /// GET
@@ -14,6 +14,7 @@ public class {{_input:controller_name}}Controller : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public IActionResult Index()
     {
+        {{_cursor_}}
         return Ok();
     }
 

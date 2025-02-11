@@ -1,0 +1,1 @@
+builder.Services.AddScoped<{{_input_:interface}}, {{_input_:class}}>();

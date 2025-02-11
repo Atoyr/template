@@ -1,14 +1,13 @@
     /// <summary>
-    /// POST
+    /// DELETE
     /// </summary>
     /// <returns>実行結果</returns>
-    [HttpPost()]
-    [Route("[controller]/[action]")]
-    [ProducesResponseType<object>(StatusCodes.Status200OK)]
+    [HttpDelete()]
+    [Route("[controller]/{id}")]
+    [ProducesResponseType<CreateTaskModel>(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    [Consumes("application/json")]
-    public IActionResult {{_input_:action_name}}(object obj)
+    public async Task<IActionResult> Delete(string id)
     {
         try
         {
@@ -25,5 +24,5 @@
                     new { Message = "内部サーバーエラーが発生しました。", Details = ex.Message }
                     );
         }
-        return Ok(obj);
+        return Ok(new { status = "succsss"});
     }
